@@ -83,8 +83,7 @@ const Header = () => {
                 <div className="cursor-pointer ml-[60px]">
                   <SearchHeader />
                   <div className='flex justify-center'>
-                    <img src={logo} alt="logo" width='40' height='40' />
-
+                    <img src={logo} alt="logo" className='w-[40px] h-[40px]' />
                   </div>
                 </div>
               </Link>
