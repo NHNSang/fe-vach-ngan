@@ -1,0 +1,47 @@
+svg.slick-arrow.slick-prev{
+    z-index: 10;
+    inset-inline-start: 1px !important;
+    background-color: #7470708f !important; 
+    top: 38% !important;
+    width: 45px !important;
+    height: 100px !important;
+}
+svg.slick-arrow.slick-next{
+    z-index: 10;
+    inset-inline-end: 1px !important;
+    background-color: #7470708f !important; 
+    top: 38% !important;
+    width: 45px !important;
+    height: 100px !important;
+}
+li button{
+    background: black !important;
+    height: 5px !important;
+}
+
+@media screen and (max-width: 767px) {
+    svg.slick-arrow.slick-prev{
+        z-index: 10;
+        inset-inline-start: 1px !important;
+        background-color: #7470708f !important; 
+        top: 50% !important;
+        width: 35px !important;
+        height: 60px !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    svg.slick-arrow.slick-next{
+        z-index: 10;
+        inset-inline-end: 1px !important;
+        background-color: #7470708f !important; 
+        top: 50% !important;
+        width: 35px !important;
+        height: 60px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+.ant-carousel .slick-list{
+    height: 300px !important;   
+}
+}

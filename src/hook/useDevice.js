@@ -4,9 +4,11 @@ export const useDevice = () => {
   const [windowWidth, setWindowWidth] = useState(0)
   const [windowHeight, setWindowHeight] = useState(0)
   const isTablet = windowWidth < 1024
-  const isHeader = windowWidth < 1200
+  const isLayout = windowWidth < 1200
+  const isHeader = windowWidth < 1280
   const isPcSD = windowWidth < 1650
   const isMobile = windowWidth < 768
+  const isTabletNew = windowWidth < 992
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,6 +26,8 @@ export const useDevice = () => {
   }, [])
 
   return {
+    isTabletNew,
+    isLayout,
     isMobile,
     isPcSD,
     isTablet,

@@ -1,0 +1,11 @@
+button.slick-arrow.slick-next, button.slick-arrow.slick-prev{
+    right: -6px !important;
+}
+button.slick-arrow.slick-prev{
+    right: -9px !important;
+}
+button.slick-arrow.slick-next::before, button.slick-arrow.slick-prev::before{
+    color: gray !important;
+    font-size: 33px;
+
+}   
