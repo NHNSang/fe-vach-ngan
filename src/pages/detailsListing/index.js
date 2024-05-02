@@ -6,7 +6,8 @@ import BreadcrumbComnponent from '../../components/breadcrumb';
 import DetailsListingPrice from '../../components/detailsListing-price';
 import DetailsListingCommit from '../../components/detailsListing-commit';
 import ListItem from '../../components/listItem';
-
+import { useParams } from 'react-router-dom';
+import ProductData from '../../data/product.json'
 
 const images = [
   {
@@ -24,16 +25,21 @@ const images = [
 ];
 
 const DetailsListing = () => {
+  const { id } = useParams();
+  console.log(id)
+  const { products } = ProductData;
+
   return (
     <div className=' bg-[#f5f5f5] mt-[90px] md:mt-[130px] lg:mt-[130px]  xl:mt-[133px]'>
       <div className='container mx-auto pt-5'>
-        <BreadcrumbComnponent title_1="Trang chủ" title_2='Vách ngăn tổ ong' title_3='Vách ngăn cách nhiệt' />
+        <BreadcrumbComnponent title_1="Trang chủ" title_2={products[id]?.name} />
+        <h2>Chi tiết sản phẩm {products[id]?.name}</h2>
         <Row className='my-5 py-5  px-3 bg-white'>
           <Col xs={24} md={24} lg={24} xl={10} xxl={10}>
-              <ImageGallery items={images} autoPlay={true} showPlayButton={false} showFullscreenButton={false} slideDuration={300} />
+            <ImageGallery items={products[id]?.images} autoPlay={true} showPlayButton={false} showFullscreenButton={false} slideDuration={300} />
           </Col>
           <Col xs={24} md={24} lg={17} xl={8} xxl={8}>
-            <DetailsListingPrice />
+            <DetailsListingPrice name={products[id]?.name} saleOff={products[id]?.saleOff} price={products[id]?.price} id={products[id]?.id} />
           </Col>
           <Col xs={24} md={24} lg={7} xl={6} xxl={6}>
             <DetailsListingCommit />

@@ -1,82 +1,55 @@
-import { Col, Divider, Row } from 'antd';
+import { Col, Row } from 'antd';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useDevice } from '../../hook/useDevice';
 import Card from './card';
-import BannerZoom from '../bannerZoom';
 import style from './style.css';
 
 const ListItem = () => {
-
     const [expanded, setExpanded] = useState(false);
-
     const toggleExpand = () => {
         setExpanded(!expanded);
     };
-
+    const numb = [
+        {
+            id: 0,
+        },{
+            id: 1,
+        }, {
+            id: 2,
+        }, {
+            id: 3,
+        }, {
+            id: 4,
+        }, {
+            id: 5,
+        },{
+            id: 6,
+        },{
+            id: 7,
+        },
+    ]
     return (
         <div className='mt-5 py-5 '>
             <div className=' bg-[#3980F1] mt-5 flex justify-between'>
-                <div className='flex items-center gap-2 pl-[20px]'>
+                <div className='pl-[20px] py-4'>
                     <p className='text-white text-[14px] md:text-base lg:text-lg xl:text-xl'>Sản phẩm gợi ý cho bạn</p>
-                </div>
-                <div className='flex items-center gap-2 pr-[20px] lg:pr-[30px] xl:pr-[100px]'>
-                    <img src='https://fivess.vn/assets/images/v2/focus.png' alt='img' className={`${'zoom-in-out-box w-[30px] md:w-[50px] lg:w-[40px] xl:w-[50px] h-[30px] md:h-[50px] lg:h-[40px] xl:h-[50px] '}`} />
-                    <button className='xl:px-10 lg:px-8 px-2 py-2 rounded-xl bg-[#dfbe12] text-white text-[13px] lg:text-lg xl:text-xl w-[127px] lg:w-full ' >
-                        <a href='/vach-ngan-to-ong' style={{ color: 'white' }}>Xem thêm</a>
-                    </button>
                 </div>
             </div>
             <div className={`text-container ${expanded ? 'expanded' : ''}`} style={{ maxHeight: expanded ? 'none' : '830px' }}>
                 <Row>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
-                    <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2'>
-                        <Card />
-                    </Col>
+                    {numb.map((_, index) => {
+                        return (
+                            <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2' key={index}>
+                                <Card number={index}/>
+                            </Col>
+                        )
+                    })}
+                    {numb.map((_, index) => {
+                        return (
+                            <Col  xs={12} sm={8} md={8} lg={6} xl={8} xxl={6} className='mt-2' key={index}>
+                                <Card number={index}/>
+                            </Col>
+                        )
+                    })}
                 </Row>
             </div>
             <div className='flex justify-center'>

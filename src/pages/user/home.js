@@ -13,44 +13,11 @@ import { useDevice } from "../../hook/useDevice";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-
-const listDataRouter = [
-    {
-        path: '/vach-ngan-to-ong',
-        img: 'https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png',
-        title: 'Vách ngăn tổ ong',
-    },
-    {
-        path: '/rem-cuon',
-        img: 'https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png',
-        title: 'Rèm cuốn',
-    },
-    {
-        path: '/rem-vai',
-        img: 'https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png',
-        title: 'Rèm vãi',
-    },
-    {
-        path: '/rem-cau-vong',
-        img: 'https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png',
-        title: 'Rèm cầu vòng',
-    },
-    {
-        path: '/cua-luoi-xep',
-        img: 'https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png',
-        title: 'Của lưới xếp',
-    },
-    {
-        path: '/cua-luoi-chong-muoi',
-        img: 'https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png',
-        title: 'Của lưới chống muỗi',
-    },
-
-]
+import ProductData from '../../data/product.json'
 
 export default function Home() {
-    const { isLayout , isTablet , isMobile } = useDevice()
+    const { isLayout, isTablet, isMobile } = useDevice()
+    const { products } = ProductData;
     const settings = {
         dots: false,
         infinite: true,
@@ -69,20 +36,20 @@ export default function Home() {
                         {isLayout ?
                             <div className="mx-auto mb-5 bg-white px-2 md:p-5">
                                 <Slider {...settings}>
-                                    {listDataRouter.map((_, index) => {
+                                    {products.map((_, index) => {
                                         return (
                                             <div key={index} className="pt-[20px] md:pt-0">
-                                                <a href={_.path} className=' mt-5 '>
+                                                <a href={`${_?.path}/${_?.id}`} className=' mt-5 '>
                                                     <div className="flex justify-center">
-                                                        <img src='https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png' alt='img' className='w-[60px] h-[60px] border rounded-[24px]' />
+                                                        <img src={_.thumbnail} alt={_.name} className='w-[60px] h-[60px] border rounded-[24px]' />
                                                     </div>
-                                                    <p className='text-base text-black text-center'>{_.title}</p>
+                                                    <p className='text-base text-black text-center'>{_.name}</p>
                                                 </a>
-                                            </div>)
+                                            </div>
+                                        )
                                     })}
                                 </Slider>
                             </div>
-
                             :
                             <>
                                 <div className='bg-white border rounded-lg px-4 py-5'>
@@ -92,41 +59,16 @@ export default function Home() {
                                             <p className='text-base text-white'>Trang chủ</p>
                                         </div>
                                     </Link>
-                                    {/* <a href="/vach-ngan-to-ong" className='flex items-center mt-8 gap-3'>
-                                <img src='https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png' alt='img' className='w-[60px] h-[60px] border rounded-[24px]' />
-                                <p className='text-base text-black'>Vách ngăn tổ ong</p>
-                            </a>
-                            <Divider />
-                            <a href="/rem-cuon" className='flex items-center mt-5 gap-3'>
-                                <img src='https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png' alt='img' className='w-[60px] h-[60px] border rounded-[24px]' />
-                                <p className='text-base text-black'>Rèm cuốn</p>
-                            </a>
-                            <Divider />
-                            <a  href='/rem-vai' className='flex items-center mt-5 gap-3'>
-                                <img src='https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png' alt='img' className='w-[60px] h-[60px] border rounded-[24px]' />
-                                <p className='text-base text-black'>Rèm vãi</p>
-                            </a>
-                            <Divider />
-                            <a href='/rem-cau-vong' className='flex items-center mt-5 gap-3'>
-                                <img src='https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png' alt='img' className='w-[60px] h-[60px] border rounded-[24px]' />
-                                <p className='text-base text-black'>Rèm cầu vòng</p>
-                            </a>
-                            <Divider />
-                            <a href='/cua-luoi-xep' className='flex items-center mt-5 gap-3'>
-                                <img src='https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png' alt='img' className='w-[60px] h-[60px] border rounded-[24px]' />
-                                <p className='text-base text-black'>Của lưới xếp</p>
-                            </a>
-                            <Divider />
-                            <a href='/cua-luoi-chong-muoi' className='flex items-center mt-5 gap-3'>
-                                <img src='https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png' alt='img' className='w-[60px] h-[60px] border rounded-[24px]' />
-                                <p className='text-base text-black'>Của lưới chống muỗi </p>
-                            </a> */}
-                                    {listDataRouter.map((_, index) => {
-                                        return (<div key={index}> <a href={_.path} className='flex items-center mt-5 gap-3'>
-                                            <img src='https://sagowin.com/uploads/source//cua-luoi-me-linh-q.png' alt='img' className='w-[60px] h-[60px] border rounded-[24px]' />
-                                            <p className='text-base text-black'>{_.title}</p>
-                                        </a>
-                                            <Divider /></div>)
+                                    {products.map((_, index) => {
+                                        return (
+                                            <div key={index}>
+                                                <a href={`${_?.path}/${_?.id}`} className='flex items-center mt-5 gap-3'>
+                                                    <img src={_.thumbnail} alt={_.name} className='w-[60px] h-[60px] border rounded-[24px]' />
+                                                    <p className='text-base text-black'>{_.name}</p>
+                                                </a>
+                                                <Divider />
+                                            </div>
+                                        )
                                     })}
                                 </div>
                                 <div className="mt-5">
@@ -143,7 +85,6 @@ export default function Home() {
                         <NewHomePage />
                         <ListItem />
                         <FeedBack />
-
                     </Col>
                 </Row>
             </div>

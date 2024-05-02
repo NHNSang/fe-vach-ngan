@@ -44,7 +44,7 @@ const listData = [
     },
 ]
 const FeedBack = () => {
-    const { isTablet , isMobile } = useDevice()
+    const { isTablet, isMobile } = useDevice()
 
 
     const settings = {
@@ -59,25 +59,27 @@ const FeedBack = () => {
     };
     return (
         <div>
-            <div className=' bg-[#3980F1] mt-5 py-5 pl-[20px]'>
-                <p className='text-white text-xl'>Bình luận khách hàng</p>
+            <div className=' bg-[#3980F1] mt-5 flex justify-between'>
+                <div className='pl-[20px] py-4'>
+                    <p className='text-white text-[14px] md:text-base lg:text-lg xl:text-xl'>Bình luận khách hàng</p>
+                </div>
             </div>
             <div className='mt-5 py-2 md:py-5 bg-white  mx-auto'>
-            <Slider {...settings} className={style}>
-                {listData.map((_, index) => {
-                    return (
-                        <div key={index} className=''>
-                            <div className='mt-3 text-center px-3'>
-                                <img src={_.image} alt='person-feedback' className='w-[120px] lg:w-[150px] h-[120px] lg:h-[150px] mx-auto rounded-full object-cover' />
-                                <p className='mt-3 text-lg font-medium'>{_.name}</p>
-                                <p className='mt-3 text-lg line-clamp-2'>''{_.feedback}''</p>
+                <Slider {...settings} className={style}>
+                    {listData.map((_, index) => {
+                        return (
+                            <div key={index} className=''>
+                                <div className='mt-3 text-center px-3'>
+                                    <img src={_.image} alt='person-feedback' className='w-[120px] lg:w-[150px] h-[120px] lg:h-[150px] mx-auto rounded-full object-cover' />
+                                    <p className='mt-3 text-lg font-medium'>{_.name}</p>
+                                    <p className='mt-3 text-lg line-clamp-2'>''{_.feedback}''</p>
+                                </div>
                             </div>
-                        </div>
-                    )
-                })}
-            </Slider>
+                        )
+                    })}
+                </Slider>
             </div>
-            
+
 
         </div>
     )

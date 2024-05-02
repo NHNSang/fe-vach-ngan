@@ -1,0 +1,180 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "path": "/vach-ngan-to-ong",
+            "name": "Vách ngăn tổ ong",
+            "saleOff": 650000,
+            "price": 720000,
+            "thumbnail": "https://blinds.vn/wp-content/uploads/2021/07/re%CC%80m-to%CC%82%CC%89-ong-ma%CC%80u-va%CC%80ng-lu%CC%81a-500x500.jpeg",
+            "images": [
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/07/re%CC%80m-to%CC%82%CC%89-ong-ma%CC%80u-xa%CC%81m-.jpeg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/07/re%CC%80m-to%CC%82%CC%89-ong-ma%CC%80u-xa%CC%81m-.jpeg"
+                },
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/07/re%CC%80m-to%CC%82%CC%89-ong-ma%CC%80u-va%CC%80ng-lu%CC%81a-500x500.jpeg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/07/re%CC%80m-to%CC%82%CC%89-ong-ma%CC%80u-va%CC%80ng-lu%CC%81a-500x500.jpeg"
+                },
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/07/re%CC%80m-to%CC%82%CC%89-ong-ma%CC%80u-tra%CC%86%CC%81ng.jpeg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/07/re%CC%80m-to%CC%82%CC%89-ong-ma%CC%80u-tra%CC%86%CC%81ng.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "path": "/rem-roman",
+            "name": "Rèm Roman",
+            "saleOff": 300000,
+            "price": 450000,
+            "thumbnail": "https://blinds.vn/wp-content/uploads/2021/01/n%C3%A2u-t%E1%BB%91i.jpg",
+            "images": [
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/01/tr%E1%BA%AFng.jpg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/01/tr%E1%BA%AFng.jpg"
+                },
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/01/n%C3%A2u-s%C3%A1ng.jpg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/01/n%C3%A2u-s%C3%A1ng.jpg"
+                },
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/01/n%C3%A2u-t%E1%BB%91i.jpg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/01/n%C3%A2u-t%E1%BB%91i.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "path": "/cua-luoi",
+            "name": "Cửa lưới xếp",
+            "saleOff": 1100000,
+            "price": 1300000,
+            "thumbnail": "https://blinds.vn/wp-content/uploads/2021/03/cua-luoi-xep-k-ray-3_b6e93848eaa0437899ec1143d1b35bbd_large-200x300.jpg",
+            "images": [
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/03/cua-luoi-xep-k-ray-2_7eafbd3c835749d0a5df8e762c01dd83_large-200x300.jpg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/03/cua-luoi-xep-k-ray-2_7eafbd3c835749d0a5df8e762c01dd83_large-200x300.jpg"
+                },
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/03/cua-luoi-xep-k-ray-3_b6e93848eaa0437899ec1143d1b35bbd_large-200x300.jpg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/03/cua-luoi-xep-k-ray-3_b6e93848eaa0437899ec1143d1b35bbd_large-200x300.jpg"
+                },
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/03/cua-luoi-xep-k-ray-1_e265cb7e711d498890ba2cbce20cbf5d_large-200x300.jpg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/03/cua-luoi-xep-k-ray-1_e265cb7e711d498890ba2cbce20cbf5d_large-200x300.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "path": "/rem-go",
+            "name": "Rèm gỗ",
+            "saleOff": 500000,
+            "price": 650000,
+            "thumbnail": "https://blinds.vn/wp-content/uploads/2021/01/1-6-181x300.jpg",
+            "images": [
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/01/1-8.jpg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/01/1-8.jpg"
+                },
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/01/1-6-181x300.jpg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/01/1-6-181x300.jpg"
+                },
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2021/01/1-5-179x300.jpg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2021/01/1-5-179x300.jpg"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "path": "/rem-cuon",
+            "name": "Rèm cuốn",
+            "saleOff": 230000,
+            "price": 350000,
+            "thumbnail": "https://remcuanewday.vn/wp-content/uploads/2022/09/Rem-cuon-ma-W008-410K-350K.jpg",
+            "images": [
+                {
+                    "original": "https://remcuanewday.vn/wp-content/uploads/2022/09/Rem-cuon-ma-W008-410K-350K.jpg",
+                    "thumbnail": "https://remcuanewday.vn/wp-content/uploads/2022/09/Rem-cuon-ma-W008-410K-350K.jpg"
+                },
+                {
+                    "original": "https://venturefestbristolandbath.com/wp-content/uploads/2022/03/u-diem-khi-su-dung-rem-cuon-chong-nang.jpg",
+                    "thumbnail": "https://venturefestbristolandbath.com/wp-content/uploads/2022/03/u-diem-khi-su-dung-rem-cuon-chong-nang.jpg"
+                },
+                {
+                    "original": "https://blinds.vn/wp-content/uploads/2020/12/X1-5.jpg",
+                    "thumbnail": "https://blinds.vn/wp-content/uploads/2020/12/X1-5.jpg"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "path": "/rem-cau-vong",
+            "name": "Rèm cầu vòng",
+            "saleOff": 930000,
+            "price": 1350000,
+            "thumbnail": "https://fpt123.net/uploads/images/manh-rem-cua/rem-cau-vong-8.jpg",
+            "images": [
+                {
+                    "original": "https://fpt123.net/uploads/images/manh-rem-cua/rem-cau-vong-8.jpg",
+                    "thumbnail": "https://fpt123.net/uploads/images/manh-rem-cua/rem-cau-vong-8.jpg"
+                },
+                {
+                    "original": "https://thegioimancua.vn/wp-content/uploads/2020/02/rem-cau-vong-14.jpg",
+                    "thumbnail": "https://thegioimancua.vn/wp-content/uploads/2020/02/rem-cau-vong-14.jpg"
+                },
+                {
+                    "original": "https://vinarem.com/wp-content/uploads/2021/01/rem-cau-vong-mau-xam-trang-vinarem.jpg",
+                    "thumbnail": "https://vinarem.com/wp-content/uploads/2021/01/rem-cau-vong-mau-xam-trang-vinarem.jpg"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "path": "/cua-luoi-chong-muoi",
+            "name": "Cửa lưới chống muỗi",
+            "saleOff": 1630000,
+            "price": 1950000,
+            "thumbnail": "https://webnoithat.net/wp-content/uploads/2019/07/cua-luoi-chong-muoi-dang-xep-9.jpg",
+            "images": [
+                {
+                    "original": "https://webnoithat.net/wp-content/uploads/2019/07/cua-luoi-chong-muoi-dang-xep-9.jpg",
+                    "thumbnail": "https://webnoithat.net/wp-content/uploads/2019/07/cua-luoi-chong-muoi-dang-xep-9.jpg"
+                },
+                {
+                    "original": "hhttps://www.hancorp.com.vn/wp-content/uploads/2020/05/L%C6%B0%E1%BB%9Bi-d%C3%A1n-c%E1%BB%ADa-s%E1%BB%95-ch%E1%BB%91ng-mu%E1%BB%97i.jpg",
+                    "thumbnail": "https://www.hancorp.com.vn/wp-content/uploads/2020/05/L%C6%B0%E1%BB%9Bi-d%C3%A1n-c%E1%BB%ADa-s%E1%BB%95-ch%E1%BB%91ng-mu%E1%BB%97i.jpg"
+                },
+                {
+                    "original": "https://miraihousejpvn.com/wp-content/uploads/2020/11/cua-luoi-chong-muoi-seiki.jpg",
+                    "thumbnail": "https://miraihousejpvn.com/wp-content/uploads/2020/11/cua-luoi-chong-muoi-seiki.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "path": "/vach-ngan-to-ong-phong-ngu",
+            "name": "Vách ngăn phòng ngủ",
+            "saleOff": 730000,
+            "price": 850000,
+            "thumbnail": "https://remcuahaka.com/wp-content/uploads/2023/01/vach-ngan-phong-ngu-di-dong-600x600.jpg",
+            "images": [
+                {
+                    "original": "https://remcuahaka.com/wp-content/uploads/2023/01/vach-ngan-phong-ngu-di-dong-600x600.jpg",
+                    "thumbnail": "https://remcuahaka.com/wp-content/uploads/2023/01/vach-ngan-phong-ngu-di-dong-600x600.jpg"
+                },
+                {
+                    "original": "https://remcuahaka.com/wp-content/uploads/2023/01/vach-ngan-phong-ngu-kin.jpg",
+                    "thumbnail": "https://remcuahaka.com/wp-content/uploads/2023/01/vach-ngan-phong-ngu-kin.jpg"
+                },
+                {
+                    "original": "https://remcuahaka.com/wp-content/uploads/2023/02/vach-to-ong-ngan-cau-thang.jpg",
+                    "thumbnail": "https://remcuahaka.com/wp-content/uploads/2023/02/vach-to-ong-ngan-cau-thang.jpg"
+                }
+            ]
+        }
+    ]
+}

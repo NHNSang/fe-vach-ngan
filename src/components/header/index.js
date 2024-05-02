@@ -5,6 +5,7 @@ import SearchHeader from './searchHeader';
 import RightHeader from './rightHeader';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDevice } from '../../hook/useDevice';
+import LeftHeaderMobile from './leftHeaderMobile';
 const Header = () => {
   const { Search } = Input;
   const navigate = useNavigate();
@@ -48,36 +49,11 @@ const Header = () => {
       <div className='container mx-auto   '>
         <div className='fixed  bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 z-50 left-0 right-0 top-0 px-[15px] md:px-[50px]'>
           {isHeader
-            ?
+            ?<>
             <div className='flex justify-between items-center relative  py-[25px] md:py-[45px] lg:py-5 xl:py-5'>
-              <div className="relative flex items-center gap-2">
-                {/* Icon */}
-                <button onClick={togglePopup} className=''>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="white" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" /></svg>
-                </button>
-                {/* Popup */}
-                {isVisible && (
-                  <div className="fixed top-[5rem]  md:top-[8rem]  left-0 right-0 z-10 bg-white shadow-md rounded-md p-4 mt-2 popup">
-                    <ul
-                      className=''
-                    >
-                      {routes.map((x) => (
-                        <li
-                          onClick={() => {
-                            navigate(x.path);
-                          }}
-                          key={x.path}
-                          className={`group relative cursor-pointer font-sans text-lg leading-[24px] tracking-wider transition duration-300 lg:text-base lg:leading-5 xl:text-[20px] xl:leading-[22px] text-black flex justify-between items-center mt-3`}
-                        >
-                          {(x.name)}
-                          <span className="block h-1 max-w-0 bg-[#FF385C] transition-all duration-700 group-hover:max-w-full"></span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" viewBox="0 0 24 24"><path fill="black" d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z" /></svg>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
+              
+            <LeftHeaderMobile/>
+
               {/*  */}
               <Link to={'/'}>
                 <div className="cursor-pointer ml-[60px]">
@@ -91,6 +67,7 @@ const Header = () => {
                 <RightHeader />
               </div>
             </div>
+            </>
             :
             <Row className='items-center'>
               <Col xl={2} lg={8} md={8} sm={24} xs={8}  >
